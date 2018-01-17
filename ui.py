@@ -1,25 +1,28 @@
 from PySide.QtGui import *
 from PySide.QtCore import *
 import sys
-import json
+import yaml
+import random
+import stylesheet
 
 class Window(QDialog):
+
+    days = ['Sunday',
+            'Monday',
+            'Tuesday',
+            'Wednesday',
+            'Thursday',
+            'Friday',
+            'Saturday']
 
     def __init__(self):
         super(Window, self).__init__()
         self.setWindowFlags(Qt.WindowMinimizeButtonHint | Qt.WindowMinMaxButtonsHint)
         self.createUI()
+        self.setStyleSheet(stylesheet.main())
 
 
     def createUI(self):
-
-        days = ['Sunday',
-                'Monday',
-                'Tuesday',
-                'Wednesday',
-                'Thursday',
-                'Friday',
-                'Saturday']
 
         self.meals = {}
 
@@ -29,7 +32,7 @@ class Window(QDialog):
         create = QPushButton('Create Meal Plan')
         create.clicked.connect(self.createMealPlan)
 
-        for day in days:
+        for day in self.days:
             label = QLabel(day)
             self.meals[day] = QTextEdit()
             refresh = QPushButton('Refresh')
@@ -53,13 +56,27 @@ class Window(QDialog):
 
 
     def createMealPlan(self):
-        path = 'meals.json'
+        path = 'meals.yaml'
         with open(path, 'r') as f:
-            data = json.load(f)
+            data = yaml.load(f)
 
-            import pprint
-            pprint.pprint(data)
+        masterList = []
+        for i in data:
+            masterList += [data.index(i)]*i['Frequency']
 
+        random.shuffle(masterList)
+        meals = []
+
+        for i in masterList:
+            if i not in meals:
+                meals.append(i)
+
+        for day in self.days:
+            self.meals[day].clear()
+            i = self.days.index(day)
+            print i
+            meal = data[meals[i]]['Name of Dish']
+            self.meals[day].setText(meal)
 
 
 
