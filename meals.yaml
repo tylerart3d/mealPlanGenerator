@@ -1,216 +1,216 @@
 -
-    'Name of Dish': 'Beef with Snow Peas'
-    Protein: Beef
-    'Health Level': Medium
-    Difficulty: Medium
-    Frequency: 6
+    name: 'Beef with Snow Peas'
+    protein: Beef
+    health: 5
+    difficulty: 5
+    frequency: 6
 -
-    'Name of Dish': 'Grilled Burgers'
-    Protein: Beef
-    'Health Level': Low
-    Difficulty: Low
-    Frequency: 3
+    name: 'Grilled Burgers'
+    protein: Beef
+    health: 2
+    difficulty: 2
+    frequency: 3
 -
-    'Name of Dish': 'Caprese Chicken'
-    Protein: Chicken
-    'Health Level': High
-    Difficulty: Medium
-    Frequency: 4
+    name: 'Caprese Chicken'
+    protein: Chicken
+    health: 8
+    difficulty: 5
+    frequency: 4
 -
-    'Name of Dish': 'Grilled Chicken'
-    Protein: Chicken
-    'Health Level': High
-    Difficulty: Medium
-    Frequency: 4
+    name: 'Grilled Chicken'
+    protein: Chicken
+    health: 8
+    difficulty: 5
+    frequency: 4
 -
-    'Name of Dish': 'Cheeseburger Salad'
-    Protein: Beef
-    'Health Level': High
-    Difficulty: Medium
-    Frequency: 6
+    name: 'Cheeseburger Salad'
+    protein: Beef
+    health: 8
+    difficulty: 5
+    frequency: 6
 -
-    'Name of Dish': 'Summer Chicken and Basil Pasta'
-    Protein: Chicken
-    'Health Level': Low
-    Difficulty: Low
-    Frequency: 6
+    name: 'Summer Chicken and Basil Pasta'
+    protein: Chicken
+    health: 2
+    difficulty: 2
+    frequency: 6
 -
-    'Name of Dish': 'Chicken w/Butternut Squash and Asparagus'
-    Protein: Chicken
-    'Health Level': High
-    Difficulty: Low
-    Frequency: 4
+    name: 'Chicken w/Butternut Squash and Asparagus'
+    protein: Chicken
+    health: 8
+    difficulty: 2
+    frequency: 4
 -
-    'Name of Dish': 'Chicken Marsala'
-    Protein: Chicken
-    'Health Level': High
-    Difficulty: High
-    Frequency: 6
+    name: 'Chicken Marsala'
+    protein: Chicken
+    health: 8
+    difficulty: 8
+    frequency: 6
 -
-    'Name of Dish': 'Chicken Pesto Bowls'
-    Protein: Chicken
-    'Health Level': High
-    Difficulty: Low
-    Frequency: 4
+    name: 'Chicken Pesto Bowls'
+    protein: Chicken
+    health: 8
+    difficulty: 2
+    frequency: 4
 -
-    'Name of Dish': Chili
-    Protein: Beef
-    'Health Level': High
-    Difficulty: Low
-    Frequency: 6
+    name: Chili
+    protein: Beef
+    health: 8
+    difficulty: 2
+    frequency: 6
 -
-    'Name of Dish': 'Cilantro Chili Chicken Skewers'
-    Protein: Chicken
-    'Health Level': High
-    Difficulty: High
-    Frequency: 4
+    name: 'Cilantro Chili Chicken Skewers'
+    protein: Chicken
+    health: 8
+    difficulty: 8
+    frequency: 4
 -
-    'Name of Dish': 'Coconut Baked Chicken'
-    Protein: Chicken
-    'Health Level': High
-    Difficulty: Medium
-    Frequency: 4
+    name: 'Coconut Baked Chicken'
+    protein: Chicken
+    health: 8
+    difficulty: 5
+    frequency: 4
 -
-    'Name of Dish': 'Enchilada Soup'
-    Protein: Chicken
-    'Health Level': Medium
-    Difficulty: Low
-    Frequency: 6
+    name: 'Enchilada Soup'
+    protein: Chicken
+    health: 5
+    difficulty: 2
+    frequency: 6
 -
-    'Name of Dish': 'Glazed Ribs'
-    Protein: Pork
-    'Health Level': Medium
-    Difficulty: Low
-    Frequency: 4
+    name: 'Glazed Ribs'
+    protein: Pork
+    health: 5
+    difficulty: 2
+    frequency: 4
 -
-    'Name of Dish': 'Homemade Hamburger Helper'
-    Protein: Beef
-    'Health Level': Low
-    Difficulty: Low
-    Frequency: 6
+    name: 'Homemade Hamburger Helper'
+    protein: Beef
+    health: 2
+    difficulty: 2
+    frequency: 6
 -
-    'Name of Dish': Lasagna
-    Protein: Beef/Pork
-    'Health Level': Low
-    Difficulty: High
-    Frequency: 2
+    name: Lasagna
+    protein: Beef/Pork
+    health: 2
+    difficulty: 8
+    frequency: 2
 -
-    'Name of Dish': 'Baked Mac and Cheese'
-    Protein: none
-    'Health Level': Low
-    Difficulty: Medium
-    Frequency: 2
+    name: 'Baked Mac and Cheese'
+    protein: none
+    health: 2
+    difficulty: 5
+    frequency: 2
 -
-    'Name of Dish': 'Patty Melts'
-    Protein: Beef
-    'Health Level': Low
-    Difficulty: HIgh
-    Frequency: 2
+    name: 'Patty Melts'
+    protein: Beef
+    health: 2
+    difficulty: 8
+    frequency: 2
 -
-    'Name of Dish': Pizza
-    Protein: varied
-    'Health Level': Low
-    Difficulty: Medium
-    Frequency: 4
+    name: Pizza
+    protein: varied
+    health: 2
+    difficulty: 5
+    frequency: 4
 -
-    'Name of Dish': 'Pork Chops'
-    Protein: Pork
-    'Health Level': Medium
-    Difficulty: High
-    Frequency: 6
+    name: 'Pork Chops'
+    protein: Pork
+    health: 5
+    difficulty: 8
+    frequency: 6
 -
-    'Name of Dish': 'Potato Kielbasa Skillet'
-    Protein: Kielbasa
-    'Health Level': Medium
-    Difficulty: Medium
-    Frequency: 4
+    name: 'Potato Kielbasa Skillet'
+    protein: Kielbasa
+    health: 5
+    difficulty: 5
+    frequency: 4
 -
-    'Name of Dish': 'Romano Chicken'
-    Protein: Chicken
-    'Health Level': Low
-    Difficulty: High
-    Frequency: 4
+    name: 'Romano Chicken'
+    protein: Chicken
+    health: 2
+    difficulty: 8
+    frequency: 4
 -
-    'Name of Dish': 'Salmon with Avacado Salsa'
-    Protein: Salmon
-    'Health Level': High
-    Difficulty: Low
-    Frequency: 4
+    name: 'Salmon with Avacado Salsa'
+    protein: Salmon
+    health: 8
+    difficulty: 2
+    frequency: 4
 -
-    'Name of Dish': 'Sesame Ginger Salmon'
-    Protein: Salmon
-    'Health Level': High
-    Difficulty: Medium
-    Frequency: 4
+    name: 'Sesame Ginger Salmon'
+    protein: Salmon
+    health: 8
+    difficulty: 5
+    frequency: 4
 -
-    'Name of Dish': 'Garlic Butter Salmon in Foil'
-    Protein: Salmon
-    'Health Level': High
-    Difficulty: Low
-    Frequency: 4
+    name: 'Garlic Butter Salmon in Foil'
+    protein: Salmon
+    health: 8
+    difficulty: 2
+    frequency: 4
 -
-    'Name of Dish': 'Honey Soy Salmon'
-    Protein: Salmon
-    'Health Level': High
-    Difficulty: Medium
-    Frequency: 4
+    name: 'Honey Soy Salmon'
+    protein: Salmon
+    health: 8
+    difficulty: 5
+    frequency: 4
 -
-    'Name of Dish': 'Smoked Sausage Skillet'
-    Protein: Kielbasa
-    'Health Level': Medium
-    Difficulty: Low
-    Frequency: 4
+    name: 'Smoked Sausage Skillet'
+    protein: Kielbasa
+    health: 5
+    difficulty: 2
+    frequency: 4
 -
-    'Name of Dish': 'Sheet Pan Steak and Veggies'
-    Protein: Beef
-    'Health Level': High
-    Difficulty: Low
-    Frequency: 6
+    name: 'Sheet Pan Steak and Veggies'
+    protein: Beef
+    health: 8
+    difficulty: 2
+    frequency: 6
 -
-    'Name of Dish': 'Shrimp Skewers'
-    Protein: Shrimp
-    'Health Level': Medium
-    Difficulty: High
-    Frequency: 2
+    name: 'Shrimp Skewers'
+    protein: Shrimp
+    health: 5
+    difficulty: 8
+    frequency: 2
 -
-    'Name of Dish': Spaghetti
-    Protein: Beef
-    'Health Level': Low
-    Difficulty: Medium
-    Frequency: 2
+    name: Spaghetti
+    protein: Beef
+    health: 2
+    difficulty: 5
+    frequency: 2
 -
-    'Name of Dish': 'Spicy Honey Chicken'
-    Protein: Chicken
-    'Health Level': Medium
-    Difficulty: Low
-    Frequency: 4
+    name: 'Spicy Honey Chicken'
+    protein: Chicken
+    health: 5
+    difficulty: 2
+    frequency: 4
 -
-    'Name of Dish': Tacos
-    Protein: varied
-    'Health Level': High
-    Difficulty: Low
-    Frequency: 8
+    name: Tacos
+    protein: varied
+    health: 8
+    difficulty: 2
+    frequency: 8
 -
-    'Name of Dish': 'Brazilian Salmon Stew'
-    Protein: Salmon
-    'Health Level': High
-    Difficulty: Medium
-    Frequency: 4
+    name: 'Brazilian Salmon Stew'
+    protein: Salmon
+    health: 8
+    difficulty: 5
+    frequency: 4
 -
-    'Name of Dish': 'Steak Kebabs'
-    Protein: Beef
-    'Health Level': High
-    Difficulty: Medium
-    Frequency: 6
+    name: 'Steak Kebabs'
+    protein: Beef
+    health: 8
+    difficulty: 5
+    frequency: 6
 -
-    'Name of Dish': BLTs
-    Protein: Bacon
-    'Health Level': Low
-    Difficulty: Medium
-    Frequency: 4
+    name: BLTs
+    protein: Bacon
+    health: 2
+    difficulty: 5
+    frequency: 4
 -
-    'Name of Dish': 'Chicken n Noodles'
-    Protein: Chicken
-    'Health Level': Low
-    Difficulty: Low
-    Frequency: 6
+    name: 'Chicken n Noodles'
+    protein: Chicken
+    health: 2
+    difficulty: 2
+    frequency: 6
