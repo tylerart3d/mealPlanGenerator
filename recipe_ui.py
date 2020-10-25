@@ -26,7 +26,7 @@ class Window(QMainWindow):
         self.resize(1200, 600)
 
     def update_recipe(self):
-        #self.list_ingredients.model().clear()
+        self.list_ingredients.clear()
         self.list_directions.clear()
 
         menu_item = self.list_recipe.selectedItems()[0]
@@ -36,14 +36,16 @@ class Window(QMainWindow):
         for ingredient in ingredients:
             item = QTreeWidgetItem()
             item.setText(0, ingredient)
-            try: item.setText(1, ingredients[ingredient]['amount'])
+            try: item.setText(1, str(ingredients[ingredient]['amount']))
             except: pass
-            try: item.setText(2, ingredients[ingredient]['cut'])
+            try: item.setText(2, str(ingredients[ingredient]['cut']))
             except: pass
-            try: item.setText(3, ingredients[ingredient]['notes'])
+            try: item.setText(3, str(ingredients[ingredient]['notes']))
             except: pass
 
             self.list_ingredients.addTopLevelItem(item)
+            self.list_ingredients.resizeColumnToContents(0)
+
 
         directions = menu_item.meal_data['directions']
         inst_string = ''
