@@ -17,34 +17,34 @@ class Meal(object):
         return self._name
 
     def __eq__(self, other):
-        return self.getName() == other.getName()
+        return self.get_name() == other.get_name()
 
-    def getName(self):
+    def get_name(self):
         return self._name
 
-    def getProtein(self):
+    def get_protein(self):
         return self._protein
 
-    def getHealth(self):
+    def get_health(self):
         return self._health
 
-    def getFrequency(self):
+    def get_frequency(self):
         return self._frequency
 
-    def getDifficulty(self):
+    def get_difficulty(self):
         return self._difficulty
 
-    def setName(self, name):
+    def set_name(self, name):
         self._name = name
 
-    def setProtein(self, protein):
+    def set_protein(self, protein):
         self._protein = protein
 
-    def setHealth(self, health):
+    def set_health(self, health):
         self._health = health
 
-    def setFrequency(self, frequency):
+    def set_frequency(self, frequency):
         self._frequency = frequency
 
-    def setDifficulty(self, difficulty):
+    def set_difficulty(self, difficulty):
         self._difficulty = difficulty

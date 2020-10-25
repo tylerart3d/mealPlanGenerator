@@ -1,5 +1,6 @@
-from PySide.QtGui import *
-from PySide.QtCore import *
+from PySide2.QtGui import *
+from PySide2.QtCore import *
+from PySide2.QtWidgets import *
 import sys
 import stylesheet
 import yaml
@@ -8,6 +9,7 @@ import meal
 from meal import Meal
 from functools import partial
 import logging
+from imp import reload
 
 reload(meal)
 
@@ -22,7 +24,7 @@ class Window(QDialog):
             'Friday',
             'Saturday']
 
-    path = 'meals.yaml'
+    path = 'meals2.yaml'
 
     def __init__(self):
         super(Window, self).__init__()
@@ -72,14 +74,14 @@ class Window(QDialog):
     def createMeals(self):
 
         with open(self.path, 'r') as f:
-            data = yaml.load(f)
+            data = yaml.safe_load(f)
 
         for item in data:
             meal = Meal(item['name'])
-            meal.setProtein(item['protein'])
-            meal.setHealth(item['health'])
-            meal.setFrequency(item['frequency'])
-            meal.setDifficulty(item['difficulty'])
+            meal.set_protein(item['protein'])
+            meal.set_health(item['health'])
+            meal.set_frequency(item['frequency'])
+            meal.set_difficulty(item['difficulty'])
             self.meals.append(meal)
 
 
@@ -89,7 +91,7 @@ class Window(QDialog):
         masterList = []
         for meal in self.meals:
             # Assign Multiples by Frequency
-            for i in range(meal.getFrequency()):
+            for i in range(meal.get_frequency()):
                 masterList.append(meal)
 
         # Randomize List
@@ -105,7 +107,7 @@ class Window(QDialog):
 
             if meal not in weeklyMeals:
                 # Only 1 Fish a Week
-                if meal.getProtein() == 'Fish':
+                if meal.get_protein() == 'Fish':
                     if not fish:
                         fish = True
                         weeklyMeals.append(meal)
@@ -117,7 +119,7 @@ class Window(QDialog):
         # Add to UI
         i=0
         for day in self.days:
-            self.mealUI[day].setText(weeklyMeals[i].getName())
+            self.mealUI[day].setText(weeklyMeals[i].get_name())
             i+=1
 
 
@@ -129,39 +131,39 @@ class Window(QDialog):
     def healthier(self, day):
         origMeals = {}
         for d in self.days:
-            origMeals[d] = [m for m in self.meals if m.getName() == self.mealUI[d].toPlainText()][0]
+            origMeals[d] = [m for m in self.meals if m.get_name() == self.mealUI[d].toPlainText()][0]
         origMeal = origMeals[day]
 
         # Generate list of meals
         masterList = []
         for meal in self.meals:
             # Assign Multiples by Frequency
-            for i in range(meal.getFrequency()):
+            for i in range(meal.get_frequency()):
                 masterList.append(meal)
 
         # Randomize List
         shuffle(masterList)
-        masterList = [m for m in masterList if m.getHealth() > origMeal.getHealth() and m not in origMeals]
+        masterList = [m for m in masterList if m.getHealth() > origMeal.get_health() and m not in origMeals]
         if not masterList:
             logging.error('No Healthier Meal Found')
             return
 
         self.mealUI[day].clear()
-        self.mealUI[day].setText(masterList[0].getName())
+        self.mealUI[day].setText(masterList[0].get_name())
 
 
 
     def easier(self, day):
         origMeals = {}
         for d in self.days:
-            origMeals[d] = [m for m in self.meals if m.getName() == self.mealUI[d].toPlainText()][0]
+            origMeals[d] = [m for m in self.meals if m.get_name() == self.mealUI[d].toPlainText()][0]
         origMeal = origMeals[day]
 
         # Generate list of meals
         masterList = []
         for meal in self.meals:
             # Assign Multiples by Frequency
-            for i in range(meal.getFrequency()):
+            for i in range(meal.get_frequency()):
                 masterList.append(meal)
 
         # Randomize List
@@ -172,7 +174,7 @@ class Window(QDialog):
             return
 
         self.mealUI[day].clear()
-        self.mealUI[day].setText(masterList[0].getName())
+        self.mealUI[day].setText(masterList[0].get_name())
 
 
 if __name__ == '__main__':

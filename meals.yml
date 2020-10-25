@@ -1,0 +1,50 @@
+meals:
+  chicken shawarma:
+    ingredients:
+      brown rice:
+        amount: 1 cup
+      lemon juice:
+        amount: 1 lemon
+      chicken thighs:
+        amount: 1.5 lbs
+        notes: boneless, skinless
+      cumin:
+        amount: 2 tablespoons
+      chili power:
+        amount: 2 teaspoons
+      italian seasoning:
+        amount: 1/2 teaspoon
+      allspice:
+        amount: 1/2 teaspoon
+      salt:
+        amount: to taste
+      pepper:
+        amount: to taste
+      persian cucumbers:
+        amount: 2
+        cut: diced
+      cherry tomatoes:
+        amount: 1 cup
+        cut: halved
+      olive oil:
+        amount: 1/4 cup + 1 tablespoon
+        notes: divided
+      pita bread:
+        amount: 1
+        cut: quartered
+      tahini:
+        amount: 1/4 cup
+        notes: homemade or store-bought
+      parsley leaves:
+        amount: 2 tablespoons
+        cut: chopped
+        notes: fresh
+    directions:
+      - In large saucepan of 2 cups water, cook rice according to package instructions; set aside.
+      - In a gallon size Ziploc bag, combine chicken, 1/4 cup of olive oil, lemon juice, cumin, chili powder, Italian seasoning, and allspicel season with salt and pepper, to taste.  Marinate for at least 30 minutes to overnight, turning the bag occasionally.  Drain the chicken from the marinade, discarding the marinade.
+      - Heat reamaining 1 tablespoon olive oil in a large skillet over medium high heat.  Add chicken to the skillet and cook, flipping once, until cooked through, about 4-5 minutes per side.  Let cool before cutting into strips.
+      - Place rice, chicken, cucumbers, tomatoes, and pita bread into meal prep containers, drizzled with tahini and garnished with parsley, if desired.
+    protein: chicken
+    ease: 6
+    health: 8
+    frequency: 3
